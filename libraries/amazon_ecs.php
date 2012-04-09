@@ -25,15 +25,14 @@
 
 class Amazon_ecs {
 		
-	public function __construct($config) {
-		require_once FCPATH.'sparks/amazon-ecs/0.0.1/vendor/amazon_ecs/AmazonECS.class.php';
+	public function __construct($config)
+	{
+		require_once SPARKPATH.'AmazonECS/0.0.1/vendor/amazon_ecs/AmazonECS.class.php';
 		
 		$ecs = new AmazonECS($config['ECS_API_KEY'], $config['ECS_API_SECRET_KEY'], $config['ECS_LANGUAGE'], $config['ECS_ASSOCIATE_TAG']);
 		
 		$CI =& get_instance();
-		$CI->ecs = $ecs;
-		
-		
+		$CI->ecs = $ecs;	
 	}
 	
 }
