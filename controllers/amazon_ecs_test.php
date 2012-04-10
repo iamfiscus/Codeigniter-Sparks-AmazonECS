@@ -9,8 +9,9 @@ class Amazon_ecs extends CI_Controller {
 	 * http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/
 	 *
 	 */
-	public function index() {	
-		$this->load->sparks('amazon-ecs');
+	public function index()
+	{	
+		$this->load->spark('AmazonECS/0.0.1');
 		
 		var_dump($this->ecs->category('Books')->responseGroup('Large')->search("Codeigniter"));
 	}
