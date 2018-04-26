@@ -1,0 +1,36 @@
+{
+    "name":"cvsouth/amazon-affiliate-template",
+    "description":"Amazon Affiliate Template",
+    "require": {
+        "illuminate/support":"5.6.*",
+        "illuminate/database":"5.6.*",
+        "illuminate/console":"5.6.*",
+        "cvsouth/website":"self.version",
+        "cvsouth/entity-manager":"self.version",
+        "cvsouth/file":"self.version",
+        "cvsouth/blogging":"self.version",
+        "cvsouth/leadgen":"self.version",
+        "spatie/string": "~2.2.2"
+    },
+    "license":"proprietary",
+    "authors": [
+        {
+            "name":"Colin South",
+            "email":"cvsouth@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Cvsouth\\AmazonAffiliateTemplate\\": "src/"}
+    },
+    "minimum-stability": "dev",
+    "extra":
+    {
+        "laravel":
+        {
+            "providers":
+            [
+                "Cvsouth\\AmazonAffiliateTemplate\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
