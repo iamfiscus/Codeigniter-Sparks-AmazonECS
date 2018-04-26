@@ -1,26 +1,20 @@
 {
-    "name":"cvsouth/amazon-affiliate-template",
-    "description":"Amazon Affiliate Template",
+    "name":"cvsouth/laravel-amazon",
+    "description":"Laravel Amazon API Integration",
     "require": {
         "illuminate/support":"5.6.*",
-        "illuminate/database":"5.6.*",
-        "illuminate/console":"5.6.*",
-        "cvsouth/website":"self.version",
-        "cvsouth/entity-manager":"self.version",
         "cvsouth/file":"self.version",
-        "cvsouth/blogging":"self.version",
-        "cvsouth/leadgen":"self.version",
-        "spatie/string": "~2.2.2"
+        "cvsouth/entities":"self.version"
     },
     "license":"proprietary",
     "authors": [
         {
             "name":"Colin South",
-            "email":"cvsouth@outlook.com"
+            "email":"colin@riseresolution.com"
         }
     ],
     "autoload": {
-        "psr-4": {"Cvsouth\\AmazonAffiliateTemplate\\": "src/"}
+        "psr-4": {"Cvsouth\\Amazon\\": "src/"}
     },
     "minimum-stability": "dev",
     "extra":
@@ -29,7 +23,7 @@
         {
             "providers":
             [
-                "Cvsouth\\AmazonAffiliateTemplate\\Providers\\ServiceProvider"
+                "Cvsouth\\Amazon\\Providers\\ServiceProvider"
             ]
         }
     }
