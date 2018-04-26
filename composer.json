@@ -2,9 +2,7 @@
     "name":"cvsouth/laravel-amazon",
     "description":"Laravel Amazon API Integration",
     "require": {
-        "illuminate/support":"5.6.*",
-        "cvsouth/file":"self.version",
-        "cvsouth/entities":"self.version"
+        "illuminate/support":"5.6.*"
     },
     "license":"proprietary",
     "authors": [
